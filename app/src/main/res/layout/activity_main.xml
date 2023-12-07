@@ -8,37 +8,90 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="300dp"
+<!--    <EditText-->
+<!--        android:id="@+id/editTextName"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Please Enter Your Name"-->
+<!--        android:inputType="text" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextEmail"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Please Enter Your Email Address"-->
+<!--        android:inputType="text" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/editTextPhone"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Please Enter Your Phone Number"-->
+<!--        android:inputType="text" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonSignup"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:text="SIGN UP" />-->
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:ems="10"
-        android:hint="Please Enter Your Name"
-        android:inputType="text" />
+        android:gravity="center"
+        android:text="BMI CALCULATOR"
+        android:textColor="#00BCD4"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTextWeight"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Please Enter Your Email Address"
-        android:inputType="text" />
+        android:hint="Please Enter Your Weight (kg)"
+        android:inputType="number" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/editTextHeight"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Please Enter Your Phone Number"
-        android:inputType="text" />
+        android:hint="Please Enter Your Height (cm)"
+        android:inputType="number" />
 
     <Button
-        android:id="@+id/buttonSignup"
+        android:id="@+id/buttonCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:text="SIGN UP" />
+        android:layout_marginTop="20dp"
+        android:text="CALCULATE" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="If BMI is bigger than 25, it is considered overweight"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+    </FrameLayout>
 </LinearLayout>
